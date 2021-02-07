@@ -1,0 +1,8 @@
+@import "./colors";
+@import "./fonts";
+
+// Import Bootstrap and its default variables
+@import "./vendor/bootstrap"; // To customize Bootstrap CSS
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "./custom";
