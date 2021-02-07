@@ -1,7 +1,7 @@
 {
-  "name": "Academy Of Arts",
-  "version": "1.0.0",
-  "description": "Academy of Arts Costa Rica - 21 Day Music and movement immersion in Beautiful Costa Rica",
+  "name": "heroku-cra-node",
+  "version": "3.0.0",
+  "description": "How to use create-react-app with a custom Node API on Heroku",
   "engines": {
     "node": "10.x"
   },

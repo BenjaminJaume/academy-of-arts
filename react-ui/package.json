@@ -1,6 +1,7 @@
 {
-  "name": "react-ui",
-  "version": "0.1.0",
+  "name": "academy-of-arts",
+  "version": "1.0.0",
+  "description": "Academy of Arts Costa Rica - 21 Day Music and movement immersion in Beautiful Costa Rica",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.6.0",
@@ -19,8 +20,7 @@
     "start": "react-scripts --max_old_space_size=4096 start",
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "css": "sass --watch src/scss:src/css --style compressed"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
