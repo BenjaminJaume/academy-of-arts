@@ -6,7 +6,10 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <div className="parralax">
+      <div
+        style={{ backgroundImage: `url("./images/beach.jpg")` }}
+        class="parralax"
+      >
         <div className="container py-5">
           <div className="row">
             <div className="col-12 text-center mb-5 mb-lg-5">
