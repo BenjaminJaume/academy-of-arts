@@ -27,7 +27,7 @@
 }
 
 // Change the Navigation Bar height here
-$navbar-height: 110px;
+$navbar-height: 82px;
 
 html {
   scroll-behavior: smooth;
@@ -36,22 +36,11 @@ html {
 body {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: x-large;
+  padding-top: $navbar-height;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-// .container-bg-img {
-//   position: relative;
-//   text-align: center;
-
-//   .container-bg-img-inner {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
-// }
 
 .top-banner {
   border-bottom: 1px solid #dee2e6;
@@ -60,8 +49,8 @@ body {
 }
 
 .vh-100 {
-  height: calc(100% - #{$navbar-height}) !important;
-  height: calc(100vh - #{$navbar-height}) !important;
+  height: calc(100% - $navbar-height) !important;
+  height: calc(100vh - $navbar-height) !important;
 }
 
 .bg-cover,

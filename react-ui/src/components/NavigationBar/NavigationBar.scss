@@ -1,0 +1,116 @@
+@import "../../scss/colors";
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+.navbar {
+  border-bottom: 2px solid $brand-1;
+
+  .navbar-logo {
+    width: 250px;
+  }
+
+  font-size: 1rem;
+
+  .dropdown-menu {
+    text-align: center;
+    border: 1px solid $brand-1;
+    border-radius: 0px;
+
+    a {
+      // color: $brand-1;
+
+      &:hover {
+        background-color: unset;
+        color: $brand-1;
+      }
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 300;
+
+    @include transition(all 300ms ease-in-out);
+  }
+
+  a[title*="Book your spot"] {
+    color: $brand-1;
+    font-weight: bold;
+
+    &:hover {
+      color: rgba($brand-1, $opacity-link);
+    }
+  }
+
+  .nav-link {
+    color: $dark !important;
+
+    &:hover {
+      color: $brand-1 !important;
+    }
+  }
+
+  .active > .nav-link {
+    color: $brand-1;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .navbar-brand:hover,
+  .nav-link:hover,
+  .navbar-nav .active {
+    cursor: pointer;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575px) {
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Column management */
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Column management */
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-logo {
+      width: 200px;
+    }
+
+    font-size: 1.25rem;
+
+    .dropdown-menu {
+      text-align: left;
+    }
+  }
+}
+
+/* Column management */
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

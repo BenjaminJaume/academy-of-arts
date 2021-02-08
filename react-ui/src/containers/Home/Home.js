@@ -1,13 +1,12 @@
 import React from "react";
 
-// CSS import
-import "./Home.css";
+import "./Home.scss";
 
 const Home = () => {
   return (
     <>
       <div
-        style={{ backgroundImage: `url("./images/beach.jpg")` }}
+        style={{ backgroundImage: `url("./assets/images/beach.jpg")` }}
         class="parralax"
       >
         <div className="container py-5">
