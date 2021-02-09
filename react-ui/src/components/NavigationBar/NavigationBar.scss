@@ -6,6 +6,10 @@
   transition: $property;
 }
 
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
 .navbar {
   border-bottom: 2px solid $brand-1;
 
@@ -21,8 +25,6 @@
     border-radius: 0px;
 
     a {
-      // color: $brand-1;
-
       &:hover {
         background-color: unset;
         color: $brand-1;
@@ -49,17 +51,16 @@
   .nav-link {
     color: $dark !important;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $brand-1 !important;
     }
   }
 
-  .active > .nav-link {
+  .dropdown-item.active,
+  .dropdown-item:active {
     color: $brand-1;
-  }
-
-  .navbar-toggler {
-    border-color: transparent;
+    background-color: unset;
   }
 
   .navbar-brand:hover,

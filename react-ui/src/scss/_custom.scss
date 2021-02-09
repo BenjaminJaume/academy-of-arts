@@ -1,31 +1,3 @@
-.title {
-  @include font-size(4rem);
-
-  // The font-size mixin is a shorthand which calls
-  // @include rfs(4rem, font-size);
-
-  // Other shorthand mixins that are available are:
-  // @include padding(4rem);
-  // @include padding-top(4rem);
-  // @include padding-right(4rem);
-  // @include padding-bottom(4rem);
-  // @include padding-left(4rem);
-  // @include margin(4rem);
-  // @include margin-top(4rem);
-  // @include margin-right(4rem);
-  // @include margin-bottom(4rem);
-  // @include margin-left(4rem);
-
-  // For properties which do not have a shorthand, the property can be passed:
-  // @include rfs(4rem, border-radius);
-
-  // Whenever a value contains a comma, it should be escaped with `#{}`:
-  // @include rfs(0 0 4rem red #{","} 0 0 5rem blue, box-shadow);
-
-  // Custom properties (css variables):
-  // @include rfs(4rem, --border-radius);
-}
-
 // Change the Navigation Bar height here
 $navbar-height: 82px;
 
@@ -41,17 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.top-banner {
-  border-bottom: 1px solid #dee2e6;
-  object-fit: cover;
-  max-height: 300px;
-}
-
-// .vh-100 {
-//   height: calc(100% - $navbar-height) !important;
-//   height: calc(100vh - $navbar-height) !important;
-// }
 
 .bg-cover,
 .parralax {
@@ -96,25 +57,6 @@ body {
   font-size: 1.5rem;
 }
 
-#carousel-front-page {
-  height: 350px;
-
-  .carousel-caption {
-    color: #000;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial;
-  }
-
-  .carousel-control-next-icon {
-    // background-image: url("../medias/images/arrow-right.svg");
-  }
-
-  .carousel-control-prev-icon {
-    // background-image: url("../medias/images/arrow-left.svg");
-  }
-}
-
 .letter-spacing-big {
   letter-spacing: 2px;
 }
@@ -125,21 +67,6 @@ body {
 
 .line-height-big {
   line-height: 2rem;
-}
-
-.title-header-page {
-  background-color: rgba($white, $opacity-link);
-}
-
-.modal-content-events {
-  height: 100%;
-  height: 100vh;
-  width: 100%;
-  width: 100vw;
-}
-
-.select2-selection.select2-selection--single {
-  border-radius: 0 !important;
 }
 
 // Fonts
@@ -156,19 +83,7 @@ body {
   font-family: "Open Sans Condensed", sans-serif !important;
 }
 
-.page-content {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 img {
-    &.sfcm {
-      border: none;
-    }
-  }
-}
-
+// What is this for?
 .is-medium {
   display: none;
 }
@@ -177,11 +92,9 @@ body {
   display: none;
 }
 
-.container-cards-attention-intention {
-  .card-deck .card {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
+// Used in a div to create a space with an image
+.separator-image {
+  height: 250px;
 }
 
 .img-cover {
@@ -190,26 +103,12 @@ body {
   width: 100%;
 }
 
-[class*="item-row-scrolling"] {
+// Limiting the height and fitting the picture for a 2 column display
+[class*="display-two-columns"] {
   height: 300px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-#list-chevron li::marker {
-  content: "> ";
-  color: $brand-1;
-}
-
-.outline-white {
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: $white;
-}
-
-.outline-black {
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: $black;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -234,17 +133,10 @@ body {
 /* Column management */
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .w-sm-75 {
-    width: 75% !important;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .w-md-75 {
-    width: 75% !important;
-  }
-
   .is-mobile {
     display: none;
   }
@@ -257,20 +149,13 @@ body {
     display: none;
   }
 
-  .container-cards-attention-intention {
-    .card-deck .card {
-      -ms-flex: 0 0 28%;
-      flex: 0 0 28%;
-    }
-  }
-
-  [class*="item-row-scrolling"] {
-    height: 400px;
-  }
-
   .parralax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
+  }
+
+  [class*="display-two-columns"] {
+    height: 400px;
   }
 }
 
@@ -281,10 +166,6 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .w-lg-75 {
-    width: 75% !important;
-  }
-
   .is-medium {
     display: none;
   }
@@ -293,7 +174,7 @@ body {
     display: inline-block;
   }
 
-  [class*="item-row-scrolling"] {
+  [class*="display-two-columns"] {
     height: 500px;
   }
 }
@@ -313,9 +194,6 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .icon-portfolio {
-    font-size: 1rem;
-  }
 }
 
 /* Column management */

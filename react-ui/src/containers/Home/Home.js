@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div
         style={{ backgroundImage: `url("./assets/images/beach.jpg")` }}
-        class="parralax"
+        className="parralax"
       >
         <div className="container py-5">
           <div className="row">
@@ -38,7 +38,7 @@ const Home = () => {
               <div>
                 <a
                   href="#start"
-                  className="btn btn-warning btn-lg rounded-0 hvr-grow mr-md-2"
+                  className="btn btn-warning btn-lg rounded-0 hvr-grow mr-2"
                   alt=""
                 >
                   Learn more
@@ -133,7 +133,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="parralax">
+      <div
+        style={{ backgroundImage: `url("./assets/images/waves.jpg")` }}
+        className="separator-image parralax my-5"
+      >
         <div className="d-flex h-100 text-center">
           <h1 className="text-white text-center align-middle text-uppercase border border-warning letter-spacing-big p-lg-5 p-md-4 p-sm-3 p-2 my-auto mx-auto">
             Welcome to Costa Rica
@@ -148,12 +151,16 @@ const Home = () => {
             data-aos="fade-right"
             data-aos-once="true"
           >
-            <div className="aden">
-              <div className="item-row-scrolling">IMAGE HERE</div>
+            <div className="display-two-columns aden">
+              <img
+                src="./assets/images/beach-2.jpg"
+                alt="Music intruments"
+                className="img-cover"
+              />
             </div>
           </div>
           <div
-            className="col-12 col-md-6 bg-black item-row-scrolling"
+            className="col-12 col-md-6 bg-black"
             data-aos="fade-left"
             data-aos-once="true"
           >
@@ -170,7 +177,7 @@ const Home = () => {
         </div>
         <div className="row">
           <div
-            className="col-12 col-md-6 bg-black order-1 order-md-0 item-row-scrolling"
+            className="col-12 col-md-6 bg-black order-1 order-md-0 display-two-columns"
             data-aos="fade-right"
             data-aos-once="true"
           >
@@ -189,8 +196,12 @@ const Home = () => {
             data-aos="fade-left"
             data-aos-once="true"
           >
-            <div className="aden">
-              <div className="item-row-scrolling">IMAGE HERE</div>
+            <div className="display-two-columns aden">
+              <img
+                src="./assets/images/beach-6.jpg"
+                alt="Music intruments"
+                className="img-cover"
+              />
             </div>
           </div>
         </div>
@@ -200,12 +211,16 @@ const Home = () => {
             data-aos="fade-right"
             data-aos-once="true"
           >
-            <div className="aden">
-              <div className="item-row-scrolling">IMAGE HERE</div>
+            <div className="display-two-columns aden">
+              <img
+                src="./assets/images/beach-3.jpg"
+                alt="Music intruments"
+                className="img-cover"
+              />
             </div>
           </div>
           <div
-            className="col-12 col-md-6 bg-black item-row-scrolling"
+            className="col-12 col-md-6 bg-black display-two-columns"
             data-aos="fade-left"
             data-aos-once="true"
           >
@@ -246,30 +261,23 @@ const Home = () => {
               <strong>voice activation</strong>, <strong>guitar basics</strong>,{" "}
               <strong>djembe</strong> and <strong>5Rhythms movement</strong>.
             </p>
-
-            <p>
-              What is Included:
-              <ul id="list-chevron">
-                <li>Transportation to and from airport (4 hour drive)</li>
-                <li>
-                  Breakfast, Lunch, Dinner and unlimited fruit for 21 days
-                </li>
-                <li>Lodging for the 21 nights</li>
-                <li>Guitar and Djembe rental</li>
-                <li>Yoga mat and Towel rental</li>
-                <li>Trip to the beach</li>
-              </ul>
-            </p>
+            What is Included:
+            <ul id="list-chevron">
+              <li>Transportation to and from airport (4 hour drive)</li>
+              <li>Breakfast, Lunch, Dinner and unlimited fruit for 21 days</li>
+              <li>Lodging for the 21 nights</li>
+              <li>Guitar and Djembe rental</li>
+              <li>Yoga mat and Towel rental</li>
+              <li>Trip to the beach</li>
+            </ul>
             <p>
               We will only be accepting 12 applicants for our March 3rd through
               March 23rd immersion to ensure proper attention and accelerated
               learning.
             </p>
-
             <h2 className="text-success text-uppercase font-title text-center my-5">
               Tuition: $3300
             </h2>
-
             <p className="text-center">
               <a
                 href="<?php echo get_permalink($page_about_program); ?>"
@@ -317,7 +325,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="parralax my-5">
+      <div
+        style={{ backgroundImage: `url("./assets/images/beach-7.jpg")` }}
+        className="separator-image parralax my-5"
+      >
         <div className="d-flex h-100 text-center">
           <h1 className="text-white text-center align-middle text-uppercase border border-warning letter-spacing-big p-lg-5 p-md-4 p-sm-3 p-2 my-auto mx-auto">
             Welcoming the new earth ambassadors!{" "}

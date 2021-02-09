@@ -6,7 +6,7 @@ import "./NavigationBar.scss";
 const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="md" variant="light" fixed="top">
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/" className="mx-auto">
         <img
           alt=""
           src="./assets/images/logo.png"
@@ -17,10 +17,10 @@ const NavigationBar = () => {
 
       <Navbar.Toggle />
 
-      <Navbar.Collapse id="navigation-bar">
+      <Navbar.Collapse id="navigation-bar" className="text-center">
         <Nav className="mx-auto">
           <IndexLinkContainer to="/" href="/">
-            <Nav.Link className="text-uppercase">Home</Nav.Link>
+            <Nav.Link>Home</Nav.Link>
           </IndexLinkContainer>
 
           <NavDropdown title="The Academy" id="dropdown-menu-1">
@@ -42,8 +42,8 @@ const NavigationBar = () => {
           </NavDropdown>
 
           <NavDropdown title="The Program" id="dropdown-menu-2">
-            <IndexLinkContainer to="/accomodations" href="/accomodations">
-              <NavDropdown.Item>accomodations</NavDropdown.Item>
+            <IndexLinkContainer to="/accomodation" href="/accomodation">
+              <NavDropdown.Item>Accomodation</NavDropdown.Item>
             </IndexLinkContainer>
             <IndexLinkContainer to="/food" href="/food">
               <NavDropdown.Item>The food</NavDropdown.Item>
@@ -56,12 +56,12 @@ const NavigationBar = () => {
             </IndexLinkContainer>
           </NavDropdown>
 
-          <IndexLinkContainer to="/Contact" href="/Contact">
-            <Nav.Link className="text-uppercase">Contact</Nav.Link>
+          <IndexLinkContainer to="/contact" href="/contact">
+            <Nav.Link>Contact</Nav.Link>
           </IndexLinkContainer>
 
           <IndexLinkContainer to="/covid-19" href="/covid-19">
-            <Nav.Link className="text-uppercase">Covid 19</Nav.Link>
+            <Nav.Link>Covid 19</Nav.Link>
           </IndexLinkContainer>
         </Nav>
         <IndexLinkContainer
