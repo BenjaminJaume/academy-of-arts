@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Loading Containers
@@ -23,55 +23,61 @@ import Footer from "../components/Footer/Footer";
 
 import "../scss/app.scss";
 
-function App() {
-  return (
-    <Router>
-      <ScrollToTop />
+import AOS from "aos";
 
-      <NavigationBar />
-      <Switch>
-        <Route path="/" component={Home} exact>
-          <Home />
-        </Route>
-        <Route path="/about-us" component={AboutUs}>
-          <AboutUs />
-        </Route>
-        <Route path="/the-staff" component={TheStaff}>
-          <TheStaff />
-        </Route>
-        <Route path="/gallery" component={Gallery}>
-          <Gallery />
-        </Route>
-        <Route path="/explore-around" component={ExploreAround}>
-          <ExploreAround />
-        </Route>
-        <Route path="/partners" component={Partners}>
-          <Partners />
-        </Route>
-        <Route path="/accomodation" component={Accomodation}>
-          <Accomodation />
-        </Route>
-        <Route path="/food" component={Food}>
-          <Food />
-        </Route>
-        <Route path="/faq" component={FAQ}>
-          <FAQ />
-        </Route>
-        <Route path="/testimonials" component={Testimonials}>
-          <Testimonials />
-        </Route>
-        <Route path="/contact" component={Contact}>
-          <Contact />
-        </Route>
-        <Route path="/covid-19" component={Covid19}>
-          <Covid19 />
-        </Route>
-        <Route component={Page404} />
-      </Switch>
+export default class App extends Component {
+  componentDidMount() {
+    AOS.init();
+  }
 
-      <Footer />
-    </Router>
-  );
+  render() {
+    return (
+      <Router>
+        <ScrollToTop />
+
+        <NavigationBar />
+        <Switch>
+          <Route path="/" component={Home} exact>
+            <Home />
+          </Route>
+          <Route path="/about-us" component={AboutUs}>
+            <AboutUs />
+          </Route>
+          <Route path="/the-staff" component={TheStaff}>
+            <TheStaff />
+          </Route>
+          <Route path="/gallery" component={Gallery}>
+            <Gallery />
+          </Route>
+          <Route path="/explore-around" component={ExploreAround}>
+            <ExploreAround />
+          </Route>
+          <Route path="/partners" component={Partners}>
+            <Partners />
+          </Route>
+          <Route path="/accomodation" component={Accomodation}>
+            <Accomodation />
+          </Route>
+          <Route path="/food" component={Food}>
+            <Food />
+          </Route>
+          <Route path="/faq" component={FAQ}>
+            <FAQ />
+          </Route>
+          <Route path="/testimonials" component={Testimonials}>
+            <Testimonials />
+          </Route>
+          <Route path="/contact" component={Contact}>
+            <Contact />
+          </Route>
+          <Route path="/covid-19" component={Covid19}>
+            <Covid19 />
+          </Route>
+          <Route component={Page404} />
+        </Switch>
+
+        <Footer />
+      </Router>
+    );
+  }
 }
-
-export default App;
