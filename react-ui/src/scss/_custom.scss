@@ -48,10 +48,10 @@ body {
   max-height: 300px;
 }
 
-.vh-100 {
-  height: calc(100% - $navbar-height) !important;
-  height: calc(100vh - $navbar-height) !important;
-}
+// .vh-100 {
+//   height: calc(100% - $navbar-height) !important;
+//   height: calc(100vh - $navbar-height) !important;
+// }
 
 .bg-cover,
 .parralax {
