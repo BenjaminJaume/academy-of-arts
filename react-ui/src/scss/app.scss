@@ -1,3 +1,4 @@
+// Importing the custom fonts and custom colors
 @import "./colors";
 @import "./fonts";
 
@@ -18,4 +19,6 @@
 @import "~@ttskch/select2-bootstrap4-theme/src/layout";
 @import "~select2/src/scss/core";
 
+// Import all the CSS rules applying the entire App
+// Including the components and the containers
 @import "./custom";

@@ -1,3 +1,5 @@
+@use "../colors";
+
 // Change the Navigation Bar height here
 $navbar-height: 82px;
 
@@ -111,6 +113,80 @@ body {
   background-size: cover;
 }
 
+// ### START NavigationBar COMPONENT CSS
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar {
+  border-bottom: 2px solid $brand-1;
+
+  .navbar-logo {
+    width: 250px;
+  }
+
+  font-size: 1rem;
+
+  .dropdown-menu {
+    text-align: center;
+    border: 1px solid $brand-1;
+    border-radius: 0px;
+
+    a {
+      &:hover {
+        background-color: unset;
+        color: $brand-1;
+      }
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 300;
+
+    @include transition(all 300ms ease-in-out);
+  }
+
+  a[title*="Book your spot"] {
+    color: $brand-1;
+    font-weight: bold;
+
+    &:hover {
+      color: rgba($brand-1, $opacity-link);
+    }
+  }
+
+  .nav-link {
+    color: $dark !important;
+
+    &:hover,
+    &.active {
+      color: $brand-1 !important;
+    }
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: $brand-1;
+    background-color: unset;
+  }
+
+  .navbar-brand:hover,
+  .nav-link:hover,
+  .navbar-nav .active {
+    cursor: pointer;
+  }
+}
+
+// ### END NavigationBar COMPONENT CSS
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575px) {
   } */
@@ -176,6 +252,18 @@ body {
 
   [class*="display-two-columns"] {
     height: 500px;
+  }
+
+  .navbar {
+    .navbar-logo {
+      width: 200px;
+    }
+
+    font-size: 1.25rem;
+
+    .dropdown-menu {
+      text-align: left;
+    }
   }
 }
 

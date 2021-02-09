@@ -1,7 +1,6 @@
 import React from "react";
 import { IndexLinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
-import "./NavigationBar.scss";
 
 const NavigationBar = () => {
   return (
