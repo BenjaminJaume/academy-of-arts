@@ -7,7 +7,7 @@ const Home = () => {
         style={{ backgroundImage: `url("./assets/images/beach.jpg")` }}
         className="parralax"
       >
-        <div className="container py-5">
+        <div className="container text-over-image-centered py-5" id="">
           <div className="row">
             <div className="col-12 text-center mb-5 mb-lg-5">
               <h1 className="display-3 text-uppercase text-brand-1 m-0">

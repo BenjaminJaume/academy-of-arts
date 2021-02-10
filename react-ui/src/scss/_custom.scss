@@ -118,7 +118,7 @@ body {
   position: relative;
   text-align: center;
   /* Centered text */
-  .centered {
+  .text-over-image-centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,9 +219,13 @@ body {
 
 // ### END NavigationBar COMPONENT CSS
 
+// ### START Home COMPONENT CSS
+
+// ### END Home COMPONENT CSS
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575px) {
-  } */
+} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

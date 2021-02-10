@@ -9,7 +9,7 @@ const Covid19 = () => {
           alt="Beach"
           class="img-cover parralax image-background-top-page"
         />
-        <p class="centered top-page-title">Covid 19</p>
+        <p class="text-over-image-centered top-page-title">Covid 19</p>
       </div>
 
       <div className="container my-5">

@@ -7,9 +7,9 @@ const Contact = () => {
         <img
           src="./assets/images/beach-4.jpg"
           alt="Beach"
-          class="img-cover parralax image-background-top-page"
+          class="img-cover image-background-top-page"
         />
-        <p class="centered top-page-title">Contact Us</p>
+        <p class="text-over-image-centered top-page-title">Contact Us</p>
       </div>
 
       <div className="container bg-light border py-5 my-5">
