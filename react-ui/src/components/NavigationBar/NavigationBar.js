@@ -41,6 +41,9 @@ const NavigationBar = () => {
           </NavDropdown>
 
           <NavDropdown title="The Program" id="dropdown-menu-2">
+            <IndexLinkContainer to="/the-program" href="/the-program">
+              <NavDropdown.Item>About the program</NavDropdown.Item>
+            </IndexLinkContainer>
             <IndexLinkContainer to="/accomodation" href="/accomodation">
               <NavDropdown.Item>Accomodation</NavDropdown.Item>
             </IndexLinkContainer>

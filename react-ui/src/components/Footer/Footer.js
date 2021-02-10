@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
           <p>
             <a
-              href="<?php echo get_permalink($page_about_program); ?>"
+              href="/the-program"
               className="btn btn-outline-success btn-lg rounded-0 hvr-glow"
               alt=""
             >
@@ -56,7 +56,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      {/* </div> */}
     </footer>
   );
 };

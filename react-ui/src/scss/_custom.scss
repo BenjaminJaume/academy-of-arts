@@ -113,6 +113,38 @@ body {
   background-size: cover;
 }
 
+// Enable to position text over an image
+.text-over-image {
+  position: relative;
+  text-align: center;
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.top-page-title {
+      @extend .border;
+      @extend .border-warning;
+      @extend .border-right-0;
+      @extend .border-left-0;
+      @extend .display-4;
+      @extend .text-white;
+      @extend .text-uppercase;
+      border-width: 4px !important;
+    }
+  }
+
+  .border {
+    border-width: 4px !important;
+  }
+
+  .image-background-top-page {
+    height: 250px;
+  }
+}
+
 // ### START NavigationBar COMPONENT CSS
 
 @mixin transition($property) {

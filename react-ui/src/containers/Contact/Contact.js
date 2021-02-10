@@ -3,10 +3,19 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className="container my-5">
+      <div class="text-over-image">
+        <img
+          src="./assets/images/beach-4.jpg"
+          alt="Beach"
+          class="img-cover parralax image-background-top-page"
+        />
+        <p class="centered top-page-title">Contact Us</p>
+      </div>
+
+      <div className="container bg-light border py-5 my-5">
         <div className="row">
           <div className="col-12 text-center">
-            <h1 className="display-4">Contact page</h1>
+            <p className="mb-0">Contact us with this form</p>
           </div>
         </div>
       </div>

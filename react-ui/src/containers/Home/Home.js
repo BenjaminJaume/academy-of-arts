@@ -101,7 +101,7 @@ const Home = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-12 text-center">
-            <h1 className="font-title text-brand-1 text-uppercase font-weight-light border border-warning p-lg-5 p-md-4 p-3">
+            <h1 className="font-title bg-light text-brand-1 text-uppercase font-weight-light border border-warning p-lg-5 p-md-4 p-3">
               We are now opening registration for our 21 day music and movement
               immersion in beautiful Costa Rica.
             </h1>

@@ -8,6 +8,7 @@ import TheStaff from "../containers/TheStaff/TheStaff";
 import Gallery from "../containers/Gallery/Gallery";
 import ExploreAround from "../containers/ExploreAround/ExploreAround";
 import Partners from "../containers/Partners/Partners";
+import TheProgram from "../containers/TheProgram/TheProgram";
 import Accomodation from "../containers/Accomodation/Accomodation";
 import Food from "../containers/Food/Food";
 import FAQ from "../containers/FAQ/FAQ";
@@ -55,6 +56,9 @@ export default class App extends Component {
           </Route>
           <Route path="/partners" component={Partners}>
             <Partners />
+          </Route>
+          <Route path="/the-program" component={TheProgram}>
+            <TheProgram />
           </Route>
           <Route path="/accomodation" component={Accomodation}>
             <Accomodation />
