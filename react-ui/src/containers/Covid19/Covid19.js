@@ -3,7 +3,7 @@ import React from "react";
 const Covid19 = () => {
   return (
     <>
-      <div class="text-over-image">
+      <div class="text-over-image bg-success">
         <img
           src="./assets/images/beach-9.jpg"
           alt="Beach"

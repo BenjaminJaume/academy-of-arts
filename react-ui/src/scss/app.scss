@@ -4,11 +4,12 @@
 
 // Import all CSS librairies and its default variables
 @import "./vendor/bootstrap"; // To customize Bootstrap CSS
-@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "~react-tabs/style/react-tabs";
 @import "~hover.css/scss/hover";
 @import "~aos/src/sass/aos";
-@import "~animate.css/animate.min.css";
-@import "~cssgram/source/scss/cssgram.scss";
+@import "~animate.css/animate.min";
+@import "~cssgram/source/scss/cssgram";
 // @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 // @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 // @import "~@fortawesome/fontawesome-free/scss/regular.scss";

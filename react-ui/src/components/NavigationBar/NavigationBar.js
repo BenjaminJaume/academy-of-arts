@@ -23,37 +23,50 @@ const NavigationBar = () => {
           </IndexLinkContainer>
 
           <NavDropdown title="The Academy" id="dropdown-menu-1">
-            <IndexLinkContainer to="/about-us" href="/about-us">
+            {/* <IndexLinkContainer to="/about-us" href="/about-us"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>About us</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/the-staff" href="/the-staff">
+            {/* <IndexLinkContainer to="/the-staff" href="/the-staff"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>The staff</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/gallery" href="/gallery">
+            <IndexLinkContainer to="/arrivals" href="/arrivals">
+              <NavDropdown.Item>Arrivals</NavDropdown.Item>
+            </IndexLinkContainer>
+            {/* <IndexLinkContainer to="/gallery" href="/gallery"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>Gallery</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/explore-around" href="/explore-around">
+            {/* <IndexLinkContainer to="/explore-around" href="/explore-around"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>Explore around</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/partners" href="/partners">
+            {/* <IndexLinkContainer to="/partners" href="/partners"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>Partners</NavDropdown.Item>
             </IndexLinkContainer>
           </NavDropdown>
 
           <NavDropdown title="The Program" id="dropdown-menu-2">
-            <IndexLinkContainer to="/the-program" href="/the-program">
+            {/* <IndexLinkContainer to="/the-program" href="/the-program"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>About the program</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/accomodation" href="/accomodation">
+            {/* <IndexLinkContainer to="/accomodation" href="/accomodation"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>Accomodation</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/food" href="/food">
+            {/* <IndexLinkContainer to="/food" href="/food"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>The food</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/faq" href="/faq">
+            {/* <IndexLinkContainer to="/faq" href="/faq"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>FAQ</NavDropdown.Item>
             </IndexLinkContainer>
-            <IndexLinkContainer to="/testimonials" href="/testimonials">
+            {/* <IndexLinkContainer to="/testimonials" href="/testimonials"> */}
+            <IndexLinkContainer to="/" href="/" disabled>
               <NavDropdown.Item>Testimonials</NavDropdown.Item>
             </IndexLinkContainer>
           </NavDropdown>
@@ -62,7 +75,8 @@ const NavigationBar = () => {
             <Nav.Link>Contact</Nav.Link>
           </IndexLinkContainer>
 
-          <IndexLinkContainer to="/covid-19" href="/covid-19">
+          <IndexLinkContainer to="/" href="/" disabled>
+            {/* <IndexLinkContainer to="/covid-19" href="/covid-19"> */}
             <Nav.Link>Covid 19</Nav.Link>
           </IndexLinkContainer>
         </Nav>

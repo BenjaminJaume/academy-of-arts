@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../containers/Home/Home";
 import AboutUs from "../containers/AboutUs/AboutUs";
 import TheStaff from "../containers/TheStaff/TheStaff";
+import Arrivals from "../containers/Arrivals/Arrivals";
 import Gallery from "../containers/Gallery/Gallery";
 import ExploreAround from "../containers/ExploreAround/ExploreAround";
 import Partners from "../containers/Partners/Partners";
@@ -28,6 +29,7 @@ import "../scss/app.scss";
 import AOS from "aos";
 
 export default class App extends Component {
+  // Initialize Animate On Scroll librairy
   componentDidMount() {
     AOS.init();
   }
@@ -47,6 +49,9 @@ export default class App extends Component {
           </Route>
           <Route path="/the-staff" component={TheStaff}>
             <TheStaff />
+          </Route>
+          <Route path="/arrivals" component={Arrivals}>
+            <Arrivals />
           </Route>
           <Route path="/gallery" component={Gallery}>
             <Gallery />

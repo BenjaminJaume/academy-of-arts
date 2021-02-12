@@ -219,9 +219,18 @@ body {
 
 // ### END NavigationBar COMPONENT CSS
 
-// ### START Home COMPONENT CSS
+// ### START Contact COMPONENT CSS
 
-// ### END Home COMPONENT CSS
+.contact-tabs .react-tabs {
+  &__tab {
+    @extend .rounded-0;
+    &--selected {
+      @extend .bg-warning;
+    }
+  }
+}
+
+// ### END Contact COMPONENT CSS
 
 /* Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575px) {
