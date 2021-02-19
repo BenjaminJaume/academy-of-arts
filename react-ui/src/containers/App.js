@@ -24,6 +24,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Footer from "../components/Footer/Footer";
 
 // Importing custom css for the whole app
+import "react-tabs/style/react-tabs.scss";
 import "../scss/app.scss";
 
 import AOS from "aos";

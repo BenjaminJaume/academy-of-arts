@@ -1,8 +1,21 @@
-import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.scss";
+import React, { useState } from "react";
+import Select from "react-select";
 
 const Contact = () => {
+  const [countries, setCountries] = useState(null);
+
+  // Fetch Function
+  fetch("./assets/json/countries.json")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (countries) {
+      setCountries(countries);
+    })
+    .catch(function (err) {
+      console.log(err, " error");
+    });
+
   return (
     <>
       <div className="text-over-image bg-success">
@@ -30,7 +43,7 @@ const Contact = () => {
 
       <div className="container bg-light border py-5 my-5">
         <div className="row">
-          <div className="col-md-6 col-12 text-center order-1 order-md-0">
+          <div className="col-md-6 col-12 text-center order-1 order-md-0 my-auto">
             <p>
               Preliminary approval: we will only be accepting{" "}
               <strong>12 applicants</strong> for our{" "}
@@ -54,73 +67,54 @@ const Contact = () => {
             </p>
           </div>
           <div className="col-md-6 col-12 text-center order-0 order-md-1">
-            <Tabs className="contact-tabs">
-              <TabList>
-                <Tab>Sign Up form</Tab>
-                <Tab>Information form</Tab>
-              </TabList>
+            <form>
+              <div className="form-group">
+                <label for="date-of-bith">
+                  First &amp; Last name<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="fullname"
+                  required
+                />
+              </div>
 
-              <TabPanel>
-                <h1 id="book-a-spot" className="h1 mb-3">
-                  Form to book a spot
-                </h1>
-                <form>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="name"
-                      placeholder="First &amp; Last name"
-                      required
-                    />
-                  </div>
+              <div className="form-group">
+                <label for="date-of-bith">
+                  Date of birth<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="date"
+                  className="form-control"
+                  id="date-of-birth"
+                  required
+                />
+              </div>
 
-                  <div className="form-group">
-                    <label for="date-of-bith">Date of birth</label>
-                    <input
-                      type="date"
-                      className="form-control"
-                      id="date-of-birth"
-                      placeholder="Date of birth"
-                    />
-                  </div>
+              <div className="form-group">
+                <label for="email">
+                  Email<span class="text-danger">*</span>
+                </label>
+                <input type="email" className="form-control" required />
+              </div>
 
-                  <div className="form-group">
-                    <label for="email">* Email</label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="name"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="exampleInputPassword1"
-                    />
-                  </div>
-                  <div className="form-group form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label className="form-check-label" for="exampleCheck1">
-                      Check me out
-                    </label>
-                  </div>
-                  <button type="submit" className="btn btn-primary">
-                    Submit
-                  </button>
-                </form>
-              </TabPanel>
-              <TabPanel>
-                <h2>Any content 2</h2>
-              </TabPanel>
-            </Tabs>
+              <div className="form-group">
+                <label for="exampleInputPassword1">Country</label>
+                <Select options={countries} className="form-control-lg p-0" />
+              </div>
+
+              <p className="small">
+                <span class="text-danger">*</span> : this field is required
+              </p>
+
+              <button
+                type="submit"
+                className="btn btn-warning btn-lg text-uppercase rounded-0 hvr-glow"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
