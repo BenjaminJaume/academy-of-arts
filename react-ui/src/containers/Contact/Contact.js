@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Select from "react-select";
 
-const Contact = () => {
+const Contact = (props) => {
+  const { dateStart, dateEnd, tuitionPrice } = props;
   const [countries, setCountries] = useState(null);
 
   // Fetch Function
@@ -27,20 +28,6 @@ const Contact = () => {
         <p className="text-over-image-centered top-page-title">Contact Us</p>
       </div>
 
-      <div className="container border border-warning py-5 my-5">
-        <div className="row mb-3">
-          <div className="col-12 text-center">
-            <h1 className="h1 font-title">
-              Let us know what you would like to do
-            </h1>
-            <p className="lead">
-              You can fill the "Sign Up form", or make a general enquiry, in
-              case you need more details with the "Information form"
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="container bg-light border py-5 my-5">
         <div className="row">
           <div className="col-md-6 col-12 text-center order-1 order-md-0 my-auto">
@@ -48,7 +35,7 @@ const Contact = () => {
               Preliminary approval: we will only be accepting{" "}
               <strong>12 applicants</strong> for our{" "}
               <a href="/about-the-program" alt="" className="text-warning">
-                March 3rd through March 23rd
+                {dateStart} through {dateEnd}
               </a>{" "}
               immersion to ensure proper attention and accelerated learning.
             </p>
@@ -67,7 +54,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="col-md-6 col-12 text-center order-0 order-md-1">
-            <form>
+            <form className="border border-warning rounded-0 p-2 p-md-3 p-lg-5">
               <div className="form-group">
                 <label for="date-of-bith">
                   First &amp; Last name<span class="text-danger">*</span>

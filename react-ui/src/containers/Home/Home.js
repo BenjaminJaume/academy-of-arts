@@ -1,6 +1,7 @@
 import React from "react";
 
-const Home = () => {
+const Home = (props) => {
+  const { dateStart, dateEnd, tuitionPrice } = props;
   return (
     <>
       <div
@@ -28,7 +29,7 @@ const Home = () => {
               <p>
                 <strong className="text-warning"> &#62; </strong>
                 <span className="text-white font-weight-bold border border-left-0 border-right-0 border-top-0 border-warning">
-                  3rd March, 2021 to 22nd March, 2021
+                  {dateStart} to {dateEnd}
                 </span>
                 <strong className="text-warning"> &#60; </strong>
               </p>
@@ -269,12 +270,12 @@ const Home = () => {
               <li>Trip to the beach</li>
             </ul>
             <p>
-              We will only be accepting 12 applicants for our March 3rd through
-              March 23rd immersion to ensure proper attention and accelerated
-              learning.
+              We will only be accepting 12 applicants for our {dateStart}{" "}
+              through {dateEnd} immersion to ensure proper attention and
+              accelerated learning.
             </p>
             <h2 className="text-success text-uppercase font-title text-center my-5">
-              Tuition: $3300
+              Tuition: USD${tuitionPrice}
             </h2>
             <p className="text-center">
               <a

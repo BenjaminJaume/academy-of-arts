@@ -29,6 +29,16 @@ import "../scss/app.scss";
 
 import AOS from "aos";
 
+// Global variables
+var dateStart = formatDate(new Date(2021, 2, 3)); // 3rd March, 2021
+var dateEnd = formatDate(new Date(2021, 2, 24)); // 24th March, 2021
+var tuitionPrice = 2500; // in USD
+
+function formatDate(date) {
+  date = date.toDateString().slice(3);
+  return `${date.slice(0, 7)}, ${date.slice(7)}`;
+}
+
 export default class App extends Component {
   // Initialize Animate On Scroll librairy
   componentDidMount() {
@@ -43,7 +53,11 @@ export default class App extends Component {
         <NavigationBar />
         <Switch>
           <Route path="/" component={Home} exact>
-            <Home />
+            <Home
+              dateStart={dateStart}
+              dateEnd={dateEnd}
+              tuitionPrice={tuitionPrice}
+            />
           </Route>
           <Route path="/about-us" component={AboutUs}>
             <AboutUs />
@@ -52,7 +66,11 @@ export default class App extends Component {
             <TheStaff />
           </Route>
           <Route path="/arrivals" component={Arrivals}>
-            <Arrivals />
+            <Arrivals
+              dateStart={dateStart}
+              dateEnd={dateEnd}
+              tuitionPrice={tuitionPrice}
+            />
           </Route>
           <Route path="/gallery" component={Gallery}>
             <Gallery />
@@ -79,7 +97,11 @@ export default class App extends Component {
             <Testimonials />
           </Route>
           <Route path="/contact" component={Contact}>
-            <Contact />
+            <Contact
+              dateStart={dateStart}
+              dateEnd={dateEnd}
+              tuitionPrice={tuitionPrice}
+            />
           </Route>
           <Route path="/covid-19" component={Covid19}>
             <Covid19 />
