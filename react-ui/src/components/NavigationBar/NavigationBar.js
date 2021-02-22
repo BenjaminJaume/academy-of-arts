@@ -33,8 +33,7 @@ const NavigationBar = () => {
             <IndexLinkContainer to="/arrivals" href="/arrivals">
               <NavDropdown.Item>Arrivals</NavDropdown.Item>
             </IndexLinkContainer>
-            {/* <IndexLinkContainer to="/gallery" href="/gallery"> */}
-            <IndexLinkContainer to="/" href="/" disabled>
+            <IndexLinkContainer to="/gallery" href="/gallery">
               <NavDropdown.Item>Gallery</NavDropdown.Item>
             </IndexLinkContainer>
             {/* <IndexLinkContainer to="/explore-around" href="/explore-around"> */}
